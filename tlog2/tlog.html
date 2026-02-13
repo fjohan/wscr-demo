@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Keep-lite + Process Logs (IndexedDB)</title>
+  <link rel="stylesheet" href="tlog.css" />
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <h1>Keep-lite</h1>
+      <small>process logs</small>
+    </div>
+    <div class="mode-switch" role="tablist" aria-label="Mode switch">
+      <button id="modeRecord" class="mode-btn is-active" type="button" role="tab" aria-selected="true">Record</button>
+      <button id="modeAnalysis" class="mode-btn" type="button" role="tab" aria-selected="false">Replay & Analysis</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="recordPanel" class="panel is-active" role="tabpanel" aria-label="Recording panel">
+      <div class="main-header">
+        <div class="left">
+          <h2 id="mainTitle">No note selected</h2>
+          <div class="status" id="status">Create a note or pick one from the list.</div>
+        </div>
+
+      <div class="main-actions">
+        <button id="newBtn" type="button">+ New</button>
+        <button id="fullscreenBtn" type="button">Full screen</button>
+        <button id="saveBtn" class="primary" type="button">Save</button>
+      </div>
+    </div>
+
+      <div class="record-controls">
+        <label for="fontSelect">Editor font</label>
+        <select id="fontSelect">
+          <optgroup label="Sans-serif">
+            <option value="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif">System UI</option>
+            <option value="Arial, Helvetica, sans-serif">Arial</option>
+            <option value="Roboto, Arial, sans-serif">Roboto</option>
+          </optgroup>
+          <optgroup label="Serif">
+            <option value="Georgia, serif">Georgia</option>
+            <option value="'Times New Roman', Times, serif">Times New Roman</option>
+          </optgroup>
+          <optgroup label="Monospace">
+            <option value="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">System Mono</option>
+            <option value="'Courier New', Courier, monospace">Courier New</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div id="emptyState" class="empty">
+        Select a note to edit, or click <b>+ New</b>.
+      </div>
+
+      <div id="editor" class="editor-shell" style="display:none;">
+        <input id="titleInput" class="title-input" placeholder="Title" />
+        <textarea id="bodyInput" placeholder="Write…" spellcheck="true"></textarea>
+        <div class="hint" id="hint">
+          <span>Autosaves while you type.</span>
+          <span>
+            <code id="logStats">logs: —</code>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="analysisPanel" class="panel" role="tabpanel" aria-label="Replay and analysis panel">
+      <div class="analysis-layout">
+        <aside class="notes-panel" aria-label="Notes panel">
+          <div class="notes-header">
+            <h3>Notes</h3>
+            <div class="row">
+              <button id="exportBtn" type="button" title="Export all notes to JSON">Export</button>
+              <button id="exportLogsBtn" type="button" title="Export active note logs to JSON">Export logs</button>
+              <button id="exportDiffsBtn" type="button" title="Export diffs for active note">Export diffs</button>
+              <button id="reportBtn" type="button" title="Report current note state to server">Report</button>
+              <button id="importLogsBtn" type="button" title="Load logs from JSON">Load logs</button>
+              <input id="importLogsInput" type="file" accept="application/json,.json,.txt" style="display:none;" />
+              <button id="clearLogsBtn" type="button" title="Clear active note logs">Clear logs</button>
+              <button id="deleteBtn" class="danger" type="button">Delete</button>
+            </div>
+          </div>
+
+          <div>
+            <label for="search">Search</label>
+            <input id="search" type="search" placeholder="Find notes..." autocomplete="off" />
+          </div>
+
+          <div class="notes" id="notesList" aria-label="Notes list"></div>
+        </aside>
+
+        <section class="replay-area" aria-label="Replay and graph">
+          <div class="replay-panel" id="replayPanel" aria-label="Replay controls">
+            <div class="row">
+              <button id="replayBtn" type="button">Replay</button>
+              <button id="replayPauseBtn" type="button">Pause</button>
+              <button id="replayStopBtn" type="button">Stop</button>
+              <label class="inline-label" for="replaySpeed">Speed</label>
+              <select id="replaySpeed">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="2">2x</option>
+                <option value="4">4x</option>
+                <option value="10">10x</option>
+              </select>
+              <span id="replayTime" class="replay-time">00:00 / 00:00</span>
+            </div>
+            <input id="replaySlider" class="replay-slider" type="range" min="0" max="1" value="0" step="1" />
+            <div class="replay-graph">
+              <div class="replay-graph-label">Process graph (time vs characters)</div>
+              <svg id="progressGraph" viewBox="0 0 1000 180" preserveAspectRatio="none" aria-label="Progress graph"></svg>
+              <div class="replay-graph-legend">
+                <span class="legend-item process-line">Process</span>
+                <span class="legend-item product-line">Product</span>
+                <span class="legend-item position-line">Position</span>
+                <span class="legend-item pause-dot">Pause</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="revision-panel" aria-label="Revision table">
+            <div class="revision-header">
+              <h3>Revision table</h3>
+              <span class="status" id="revisionStatus">Select a note to build revisions.</span>
+            </div>
+            <div class="revision-table-wrap">
+              <table class="revision-table" id="revisionTable">
+                <thead>
+                  <tr>
+                    <th>Row</th>
+                    <th>Local diff</th>
+                    <th>Class</th>
+                    <th>Location</th>
+                    <th>New group</th>
+                    <th>Group diff</th>
+                    <th>Time (s)</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="revision-panel" aria-label="Linear representation">
+            <div class="revision-header">
+              <h3>Linear representation</h3>
+              <span class="status" id="linearStatus">Select a note to build linear output.</span>
+            </div>
+            <div class="linear-controls">
+              <label for="pauseThreshold">Pause threshold (s)</label>
+              <input id="pauseThreshold" type="number" min="0" step="0.05" value="0.2" />
+            </div>
+            <div id="linearOutput" class="linear-output" role="textbox" aria-readonly="true"></div>
+            <div id="linearCompare" class="linear-compare" aria-live="polite"></div>
+          </div>
+
+          <div class="editor-shell replay-editor">
+            <input id="replayTitle" class="title-input" placeholder="Title" readonly />
+            <div class="replay-input-wrap">
+              <textarea id="replayBody" placeholder="Replay view" spellcheck="false"></textarea>
+              <div id="replayOverlay" class="replay-overlay" aria-hidden="true"></div>
+              <div id="replayMeasure" class="replay-measure" aria-hidden="true"></div>
+            </div>
+            <div class="hint">
+              <span>Replay view only.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Fullscreen overlay -->
+<div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-label="Fullscreen editor">
+  <div class="overlay-bar">
+    <button id="overlayClose" class="secondary" type="button">Close</button>
+    <div class="overlay-title" id="overlayTitle">Editing</div>
+    <button id="overlaySave" type="button">Save</button>
+  </div>
+  <div class="overlay-body">
+    <textarea id="overlayBody" placeholder="Write…" spellcheck="true"></textarea>
+  </div>
+</div>
+
+<script src="tlog.js"></script>
+<script src="../../simple/diff_match_patch.js"></script>
+<script src="tlog.replay.graph.js"></script>
+<script src="tlog.replay.table.js"></script>
+<script src="tlog.replay.linear.js"></script>
+<script src="tlog.replay.core.js"></script>
+</body>
+</html>

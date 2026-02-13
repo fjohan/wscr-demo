@@ -1,0 +1,930 @@
+noteId: wslog_beth00_05-02-2026_15:55:59
+title: 
+exportedAt: 2026-02-05T14:56:34.553Z
+format: prevCursor firstEq currCursor (op,"text") | CURSOR pos
+exporter: wscr-diffs-v1
+[diffs]
+0 0 1 (1,"b")
+CURSOR 1
+CURSOR 1
+1 1 2 (0,"b") (1,"e")
+CURSOR 2
+CURSOR 2
+2 2 3 (0,"be") (1,"t")
+CURSOR 3
+3 3 4 (0,"bet") (1,"h")
+CURSOR 4
+CURSOR 4
+CURSOR 4
+4 4 5 (0,"beth") (1,"0")
+CURSOR 5
+CURSOR 5
+5 5 6 (0,"beth0") (1,"0")
+CURSOR 6
+CURSOR 6
+6 6 7 (0,"beth00") (1,"\n")
+CURSOR 7
+CURSOR 7
+7 7 8 (0,"beth00\n") (1,"h")
+CURSOR 8
+8 8 9 (0,"beth00\nh") (1,"e")
+CURSOR 9
+CURSOR 9
+CURSOR 9
+9 9 10 (0,"beth00\nhe") (1,"l")
+CURSOR 10
+CURSOR 10
+10 10 11 (0,"beth00\nhel") (1,"l")
+CURSOR 11
+CURSOR 11
+11 11 12 (0,"beth00\nhell") (1,"o")
+CURSOR 12
+CURSOR 12
+12 12 13 (0,"beth00\nhello") (1," ")
+CURSOR 13
+CURSOR 13
+13 13 14 (0,"beth00\nhello ") (1,"t")
+CURSOR 14
+14 14 15 (0,"beth00\nhello t") (1,"h")
+CURSOR 15
+CURSOR 15
+CURSOR 15
+15 15 16 (0,"beth00\nhello th") (1,"e")
+CURSOR 16
+16 16 17 (0,"beth00\nhello the") (1,"r")
+CURSOR 17
+CURSOR 17
+17 17 18 (0,"beth00\nhello ther") (1,"t")
+CURSOR 18
+18 18 19 (0,"beth00\nhello thert") (1,"e")
+CURSOR 19
+CURSOR 19
+CURSOR 19
+19 18 18 (0,"beth00\nhello thert") (-1,"e")
+CURSOR 18
+CURSOR 18
+17 17 17 (0,"beth00\nhello ther") (-1,"t")
+CURSOR 17
+CURSOR 17
+16 17 18 (0,"beth00\nhello ther") (1,"e")
+CURSOR 18
+CURSOR 18
+18 18 19 (0,"beth00\nhello there") (1," ")
+CURSOR 19
+CURSOR 19
+19 19 20 (0,"beth00\nhello there ") (1,"w")
+CURSOR 20
+20 20 21 (0,"beth00\nhello there w") (1,"h")
+CURSOR 21
+CURSOR 21
+CURSOR 21
+21 21 22 (0,"beth00\nhello there wh") (1,"w")
+CURSOR 22
+CURSOR 22
+22 21 21 (0,"beth00\nhello there wh") (-1,"w")
+CURSOR 21
+CURSOR 21
+20 20 20 (0,"beth00\nhello there w") (-1,"h")
+CURSOR 20
+CURSOR 20
+19 19 19 (0,"beth00\nhello there ") (-1,"w")
+CURSOR 19
+CURSOR 19
+18 18 18 (0,"beth00\nhello there") (-1," ")
+CURSOR 18
+CURSOR 18
+17 18 19 (0,"beth00\nhello there") (1,"!")
+CURSOR 19
+CURSOR 19
+19 19 20 (0,"beth00\nhello there!") (1,"\n")
+CURSOR 20
+CURSOR 20
+20 20 21 (0,"beth00\nhello there!\n") (1,"w")
+CURSOR 21
+CURSOR 21
+21 21 22 (0,"beth00\nhello there!\nw") (1,"h")
+CURSOR 22
+22 22 23 (0,"beth00\nhello there!\nwh") (1,"a")
+CURSOR 23
+CURSOR 23
+CURSOR 23
+23 23 24 (0,"beth00\nhello there!\nwha") (1,"t")
+CURSOR 24
+CURSOR 24
+24 24 25 (0,"beth00\nhello there!\nwhat") (1," ")
+CURSOR 25
+CURSOR 25
+25 25 26 (0,"beth00\nhello there!\nwhat ") (1,"a")
+CURSOR 26
+CURSOR 26
+26 26 27 (0,"beth00\nhello there!\nwhat a") (1,"r")
+CURSOR 27
+27 27 28 (0,"beth00\nhello there!\nwhat ar") (1,"e")
+CURSOR 28
+CURSOR 28
+CURSOR 28
+28 28 29 (0,"beth00\nhello there!\nwhat are") (1," ")
+CURSOR 29
+CURSOR 29
+29 29 30 (0,"beth00\nhello there!\nwhat are ") (1,"y")
+CURSOR 30
+30 30 31 (0,"beth00\nhello there!\nwhat are y") (1,"o")
+CURSOR 31
+CURSOR 31
+CURSOR 31
+31 31 32 (0,"beth00\nhello there!\nwhat are yo") (1,"u")
+CURSOR 32
+CURSOR 32
+32 32 33 (0,"beth00\nhello there!\nwhat are you") (1," ")
+CURSOR 33
+CURSOR 33
+33 33 34 (0,"beth00\nhello there!\nwhat are you ") (1,"f")
+CURSOR 34
+34 34 35 (0,"beth00\nhello there!\nwhat are you f") (1,"o")
+CURSOR 35
+CURSOR 35
+CURSOR 35
+35 35 36 (0,"beth00\nhello there!\nwhat are you fo") (1,"r")
+CURSOR 36
+CURSOR 36
+36 36 37 (0,"beth00\nhello there!\nwhat are you for") (1," ")
+CURSOR 37
+37 37 38 (0,"beth00\nhello there!\nwhat are you for ") (1,"o")
+CURSOR 38
+CURSOR 38
+CURSOR 38
+38 38 39 (0,"beth00\nhello there!\nwhat are you for o") (1,"e")
+CURSOR 39
+39 39 40 (0,"beth00\nhello there!\nwhat are you for oe") (1,"n")
+CURSOR 40
+CURSOR 40
+CURSOR 40
+40 39 39 (0,"beth00\nhello there!\nwhat are you for oe") (-1,"n")
+CURSOR 39
+CURSOR 39
+38 38 38 (0,"beth00\nhello there!\nwhat are you for o") (-1,"e")
+CURSOR 38
+CURSOR 38
+37 38 39 (0,"beth00\nhello there!\nwhat are you for o") (1,"n")
+CURSOR 39
+39 39 40 (0,"beth00\nhello there!\nwhat are you for on") (1,"e")
+CURSOR 40
+CURSOR 40
+CURSOR 40
+40 40 41 (0,"beth00\nhello there!\nwhat are you for one") (1,"?")
+CURSOR 41
+CURSOR 41
+CURSOR 41
+
+[linear_debug]
+CHECK 1770303342592 mismatch expected_len=2 actual_len=1
+CHECK 1770303342712 mismatch expected_len=3 actual_len=2
+CHECK 1770303342947 mismatch expected_len=5 actual_len=4
+CHECK 1770303343985 mismatch expected_len=6 actual_len=5
+CHECK 1770303344130 mismatch expected_len=7 actual_len=6
+CHECK 1770303344293 mismatch expected_len=7 actual_len=8
+CHECK 1770303344384 mismatch expected_len=8 actual_len=7
+CHECK 1770303345169 mismatch expected_len=10 actual_len=9
+CHECK 1770303345392 mismatch expected_len=11 actual_len=10
+CHECK 1770303345534 mismatch expected_len=12 actual_len=11
+CHECK 1770303345749 mismatch expected_len=13 actual_len=12
+CHECK 1770303346256 mismatch expected_len=14 actual_len=13
+CHECK 1770303346274 mismatch expected_len=14 actual_len=15
+CHECK 1770303346368 mismatch expected_len=16 actual_len=15
+CHECK 1770303346506 mismatch expected_len=18 actual_len=17
+CHECK 1770303346639 mismatch expected_len=18 actual_len=19
+CHECK 1770303346640 mismatch expected_len=19 actual_len=18
+CHECK 1770303346653 mismatch expected_len=18 actual_len=19
+CHECK 1770303347284 mismatch expected_len=17 actual_len=18
+CHECK 1770303347448 mismatch expected_len=18 actual_len=17
+CHECK 1770303347985 mismatch expected_len=19 actual_len=18
+CHECK 1770303348494 mismatch expected_len=20 actual_len=19
+CHECK 1770303348701 mismatch expected_len=22 actual_len=21
+CHECK 1770303348884 mismatch expected_len=21 actual_len=22
+CHECK 1770303349154 mismatch expected_len=20 actual_len=21
+CHECK 1770303349292 mismatch expected_len=19 actual_len=20
+CHECK 1770303349431 mismatch expected_len=18 actual_len=19
+CHECK 1770303349574 mismatch expected_len=19 actual_len=18
+CHECK 1770303349851 mismatch expected_len=20 actual_len=19
+CHECK 1770303350139 mismatch expected_len=21 actual_len=20
+CHECK 1770303350943 mismatch expected_len=22 actual_len=21
+CHECK 1770303351104 mismatch expected_len=24 actual_len=23
+CHECK 1770303351363 mismatch expected_len=25 actual_len=24
+CHECK 1770303351503 mismatch expected_len=26 actual_len=25
+CHECK 1770303351652 mismatch expected_len=27 actual_len=26
+CHECK 1770303351951 mismatch expected_len=29 actual_len=28
+CHECK 1770303352488 mismatch expected_len=30 actual_len=29
+CHECK 1770303352927 mismatch expected_len=32 actual_len=31
+CHECK 1770303353109 mismatch expected_len=33 actual_len=32
+CHECK 1770303353609 mismatch expected_len=34 actual_len=33
+CHECK 1770303353778 mismatch expected_len=36 actual_len=35
+CHECK 1770303353960 mismatch expected_len=37 actual_len=36
+CHECK 1770303354176 mismatch expected_len=39 actual_len=38
+CHECK 1770303354427 mismatch expected_len=39 actual_len=40
+CHECK 1770303355018 mismatch expected_len=38 actual_len=39
+CHECK 1770303355155 mismatch expected_len=39 actual_len=38
+CHECK 1770303355393 mismatch expected_len=41 actual_len=40
+<START> :: no reason
+<1.28> :: no reason
+b :: diff insert for b
+e :: diff insert for e
+t :: diff insert for t
+h :: diff insert for h
+<0.97> :: no reason
+0 :: diff insert for 0
+0 :: diff insert for 0
+
+ :: catch-up insert
+<CR> :: keydown Enter
+<NAV,7> :: catch-up nav
+<DELETE> :: catch-up delete
+<0.70> :: no reason
+h :: diff insert for h
+e :: diff insert for e
+l :: diff insert for l
+l :: diff insert for l
+o :: diff insert for o
+<0.43> :: no reason
+<SPACE> :: diff insert for unknown
+t :: catch-up insert
+<NAV,13> :: cursor move
+h :: diff insert for t
+<NAV,14> :: catch-up nav
+<DELETE> :: catch-up delete
+h :: diff insert for h
+e :: diff insert for e
+r :: diff insert for r
+t :: catch-up insert
+<NAV,17> :: cursor move
+e :: diff insert for t
+<NAV,18> :: diff align nav
+<DELETE> :: diff delete for e
+e :: catch-up insert
+<0.55> :: no reason
+<DELETE2> :: diff delete for Backspace
+<0.42> :: no reason
+e :: diff insert for e
+<0.41> :: no reason
+<SPACE> :: diff insert for unknown
+w :: diff insert for w
+h :: diff insert for h
+w :: diff insert for w
+<DELETE4> :: diff delete for Backspace
+! :: diff insert for Shift
+<NAV,18> :: catch-up nav
+<DELETE> :: catch-up delete
+! :: diff insert for !
+<CR> :: keydown Enter
+<0.72> :: no reason
+w :: diff insert for w
+h :: diff insert for h
+a :: diff insert for a
+t :: diff insert for t
+<SPACE> :: diff insert for unknown
+a :: diff insert for a
+r :: diff insert for r
+e :: diff insert for e
+<0.44> :: no reason
+<SPACE> :: diff insert for unknown
+<0.34> :: no reason
+y :: diff insert for y
+o :: diff insert for o
+u :: diff insert for u
+<0.41> :: no reason
+<SPACE> :: diff insert for unknown
+f :: diff insert for f
+o :: diff insert for o
+r :: diff insert for r
+<SPACE> :: diff insert for unknown
+o :: diff insert for o
+e :: diff insert for e
+n :: diff insert for n
+<0.53> :: no reason
+<DELETE2> :: diff delete for Backspace
+n :: diff insert for n
+e :: diff insert for e
+<1.81> :: no reason
+? :: diff insert for Shift
+<NAV,40> :: catch-up nav
+<DELETE> :: catch-up delete
+? :: diff insert for ?
+<1.67> :: no reason
+<END> :: no reason
+
+
+[linear_steps]
+0 <START> | actual: | reconstructed:
+1 <1.28> | actual: | reconstructed:
+2 b | actual:b | reconstructed:b
+3 e | actual:be | reconstructed:be
+4 t | actual:bet | reconstructed:bet
+5 h | actual:beth | reconstructed:beth
+6 <0.97> | actual:beth | reconstructed:beth
+7 0 | actual:beth0 | reconstructed:beth0
+8 0 | actual:beth00 | reconstructed:beth00
+9 
+ | actual:beth00
+ | reconstructed:beth00
+
+10 <CR> | actual:beth00
+ | reconstructed:beth00
+
+
+11 <NAV,7> | actual:beth00
+ | reconstructed:beth00
+
+
+12 <DELETE> | actual:beth00
+ | reconstructed:beth00
+
+13 <0.70> | actual:beth00
+ | reconstructed:beth00
+
+14 h | actual:beth00
+h | reconstructed:beth00
+h
+15 e | actual:beth00
+he | reconstructed:beth00
+he
+16 l | actual:beth00
+hel | reconstructed:beth00
+hel
+17 l | actual:beth00
+hell | reconstructed:beth00
+hell
+18 o | actual:beth00
+hello | reconstructed:beth00
+hello
+19 <0.43> | actual:beth00
+hello | reconstructed:beth00
+hello
+20 <SPACE> | actual:beth00
+hello  | reconstructed:beth00
+hello 
+21 t | actual:beth00
+hello t | reconstructed:beth00
+hello t
+22 <NAV,13> | actual:beth00
+hello t | reconstructed:beth00
+hello t
+23 h | actual:beth00
+hello t | reconstructed:beth00
+hello th
+24 <NAV,14> | actual:beth00
+hello t | reconstructed:beth00
+hello th
+25 <DELETE> | actual:beth00
+hello t | reconstructed:beth00
+hello t
+26 h | actual:beth00
+hello th | reconstructed:beth00
+hello th
+27 e | actual:beth00
+hello the | reconstructed:beth00
+hello the
+28 r | actual:beth00
+hello ther | reconstructed:beth00
+hello ther
+29 t | actual:beth00
+hello thert | reconstructed:beth00
+hello thert
+30 <NAV,17> | actual:beth00
+hello thert | reconstructed:beth00
+hello thert
+31 e | actual:beth00
+hello thert | reconstructed:beth00
+hello therte
+32 <NAV,18> | actual:beth00
+hello therte | reconstructed:beth00
+hello therte
+33 <DELETE> | actual:beth00
+hello therte | reconstructed:beth00
+hello thert
+34 e | actual:beth00
+hello therte | reconstructed:beth00
+hello therte
+35 <0.55> | actual:beth00
+hello therte | reconstructed:beth00
+hello therte
+36 <DELETE2> | actual:beth00
+hello ther | reconstructed:beth00
+hello ther
+37 <0.42> | actual:beth00
+hello ther | reconstructed:beth00
+hello ther
+38 e | actual:beth00
+hello there | reconstructed:beth00
+hello there
+39 <0.41> | actual:beth00
+hello there | reconstructed:beth00
+hello there
+40 <SPACE> | actual:beth00
+hello there  | reconstructed:beth00
+hello there 
+41 w | actual:beth00
+hello there w | reconstructed:beth00
+hello there w
+42 h | actual:beth00
+hello there wh | reconstructed:beth00
+hello there wh
+43 w | actual:beth00
+hello there whw | reconstructed:beth00
+hello there whw
+44 <DELETE4> | actual:beth00
+hello there | reconstructed:beth00
+hello there
+45 ! | actual:beth00
+hello there! | reconstructed:beth00
+hello there!
+46 <NAV,18> | actual:beth00
+hello there | reconstructed:beth00
+hello there!
+47 <DELETE> | actual:beth00
+hello there | reconstructed:beth00
+hello there
+48 ! | actual:beth00
+hello there! | reconstructed:beth00
+hello there!
+49 <CR> | actual:beth00
+hello there!
+ | reconstructed:beth00
+hello there!
+
+50 <0.72> | actual:beth00
+hello there!
+ | reconstructed:beth00
+hello there!
+
+51 w | actual:beth00
+hello there!
+w | reconstructed:beth00
+hello there!
+w
+52 h | actual:beth00
+hello there!
+wh | reconstructed:beth00
+hello there!
+wh
+53 a | actual:beth00
+hello there!
+wha | reconstructed:beth00
+hello there!
+wha
+54 t | actual:beth00
+hello there!
+what | reconstructed:beth00
+hello there!
+what
+55 <SPACE> | actual:beth00
+hello there!
+what  | reconstructed:beth00
+hello there!
+what 
+56 a | actual:beth00
+hello there!
+what a | reconstructed:beth00
+hello there!
+what a
+57 r | actual:beth00
+hello there!
+what ar | reconstructed:beth00
+hello there!
+what ar
+58 e | actual:beth00
+hello there!
+what are | reconstructed:beth00
+hello there!
+what are
+59 <0.44> | actual:beth00
+hello there!
+what are | reconstructed:beth00
+hello there!
+what are
+60 <SPACE> | actual:beth00
+hello there!
+what are  | reconstructed:beth00
+hello there!
+what are 
+61 <0.34> | actual:beth00
+hello there!
+what are  | reconstructed:beth00
+hello there!
+what are 
+62 y | actual:beth00
+hello there!
+what are y | reconstructed:beth00
+hello there!
+what are y
+63 o | actual:beth00
+hello there!
+what are yo | reconstructed:beth00
+hello there!
+what are yo
+64 u | actual:beth00
+hello there!
+what are you | reconstructed:beth00
+hello there!
+what are you
+65 <0.41> | actual:beth00
+hello there!
+what are you | reconstructed:beth00
+hello there!
+what are you
+66 <SPACE> | actual:beth00
+hello there!
+what are you  | reconstructed:beth00
+hello there!
+what are you 
+67 f | actual:beth00
+hello there!
+what are you f | reconstructed:beth00
+hello there!
+what are you f
+68 o | actual:beth00
+hello there!
+what are you fo | reconstructed:beth00
+hello there!
+what are you fo
+69 r | actual:beth00
+hello there!
+what are you for | reconstructed:beth00
+hello there!
+what are you for
+70 <SPACE> | actual:beth00
+hello there!
+what are you for  | reconstructed:beth00
+hello there!
+what are you for 
+71 o | actual:beth00
+hello there!
+what are you for o | reconstructed:beth00
+hello there!
+what are you for o
+72 e | actual:beth00
+hello there!
+what are you for oe | reconstructed:beth00
+hello there!
+what are you for oe
+73 n | actual:beth00
+hello there!
+what are you for oen | reconstructed:beth00
+hello there!
+what are you for oen
+74 <0.53> | actual:beth00
+hello there!
+what are you for oen | reconstructed:beth00
+hello there!
+what are you for oen
+75 <DELETE2> | actual:beth00
+hello there!
+what are you for o | reconstructed:beth00
+hello there!
+what are you for o
+76 n | actual:beth00
+hello there!
+what are you for on | reconstructed:beth00
+hello there!
+what are you for on
+77 e | actual:beth00
+hello there!
+what are you for one | reconstructed:beth00
+hello there!
+what are you for one
+78 <1.81> | actual:beth00
+hello there!
+what are you for one | reconstructed:beth00
+hello there!
+what are you for one
+79 ? | actual:beth00
+hello there!
+what are you for one? | reconstructed:beth00
+hello there!
+what are you for one?
+80 <NAV,40> | actual:beth00
+hello there!
+what are you for one | reconstructed:beth00
+hello there!
+what are you for one?
+81 <DELETE> | actual:beth00
+hello there!
+what are you for one | reconstructed:beth00
+hello there!
+what are you for one
+82 ? | actual:beth00
+hello there!
+what are you for one? | reconstructed:beth00
+hello there!
+what are you for one?
+83 <1.67> | actual:beth00
+hello there!
+what are you for one? | reconstructed:beth00
+hello there!
+what are you for one?
+84 <END> | actual:beth00
+hello there!
+what are you for one? | reconstructed:beth00
+hello there!
+what are you for one?
+
+
+[logs]
+{
+  "header_records": {
+    "starttime": 1770303341231,
+    "endtime": 1770303359031
+  },
+  "text_records": {
+    "1770303342519": "b",
+    "1770303342631": "be",
+    "1770303342837": "bet",
+    "1770303342929": "beth",
+    "1770303343923": "beth0",
+    "1770303344034": "beth00",
+    "1770303344293": "beth00\n",
+    "1770303345084": "beth00\nh",
+    "1770303345152": "beth00\nhe",
+    "1770303345333": "beth00\nhel",
+    "1770303345448": "beth00\nhell",
+    "1770303345660": "beth00\nhello",
+    "1770303346183": "beth00\nhello ",
+    "1770303346274": "beth00\nhello t",
+    "1770303346337": "beth00\nhello th",
+    "1770303346422": "beth00\nhello the",
+    "1770303346497": "beth00\nhello ther",
+    "1770303346639": "beth00\nhello thert",
+    "1770303346640": "beth00\nhello therte",
+    "1770303347206": "beth00\nhello thert",
+    "1770303347358": "beth00\nhello ther",
+    "1770303347868": "beth00\nhello there",
+    "1770303348398": "beth00\nhello there ",
+    "1770303348608": "beth00\nhello there w",
+    "1770303348688": "beth00\nhello there wh",
+    "1770303348807": "beth00\nhello there whw",
+    "1770303349102": "beth00\nhello there wh",
+    "1770303349228": "beth00\nhello there w",
+    "1770303349371": "beth00\nhello there ",
+    "1770303349516": "beth00\nhello there",
+    "1770303349805": "beth00\nhello there!",
+    "1770303350073": "beth00\nhello there!\n",
+    "1770303350862": "beth00\nhello there!\nw",
+    "1770303351040": "beth00\nhello there!\nwh",
+    "1770303351078": "beth00\nhello there!\nwha",
+    "1770303351308": "beth00\nhello there!\nwhat",
+    "1770303351407": "beth00\nhello there!\nwhat ",
+    "1770303351539": "beth00\nhello there!\nwhat a",
+    "1770303351806": "beth00\nhello there!\nwhat ar",
+    "1770303351869": "beth00\nhello there!\nwhat are",
+    "1770303352394": "beth00\nhello there!\nwhat are ",
+    "1770303352828": "beth00\nhello there!\nwhat are y",
+    "1770303352868": "beth00\nhello there!\nwhat are yo",
+    "1770303353015": "beth00\nhello there!\nwhat are you",
+    "1770303353517": "beth00\nhello there!\nwhat are you ",
+    "1770303353690": "beth00\nhello there!\nwhat are you f",
+    "1770303353767": "beth00\nhello there!\nwhat are you fo",
+    "1770303353848": "beth00\nhello there!\nwhat are you for",
+    "1770303354054": "beth00\nhello there!\nwhat are you for ",
+    "1770303354163": "beth00\nhello there!\nwhat are you for o",
+    "1770303354333": "beth00\nhello there!\nwhat are you for oe",
+    "1770303354356": "beth00\nhello there!\nwhat are you for oen",
+    "1770303354961": "beth00\nhello there!\nwhat are you for oe",
+    "1770303355087": "beth00\nhello there!\nwhat are you for o",
+    "1770303355336": "beth00\nhello there!\nwhat are you for on",
+    "1770303355366": "beth00\nhello there!\nwhat are you for one",
+    "1770303357285": "beth00\nhello there!\nwhat are you for one?"
+  },
+  "cursor_records": {
+    "1770303342519": "1:1",
+    "1770303342592": "1:1",
+    "1770303342631": "2:2",
+    "1770303342712": "2:2",
+    "1770303342837": "3:3",
+    "1770303342929": "4:4",
+    "1770303342947": "4:4",
+    "1770303343019": "4:4",
+    "1770303343923": "5:5",
+    "1770303343985": "5:5",
+    "1770303344034": "6:6",
+    "1770303344130": "6:6",
+    "1770303344293": "7:7",
+    "1770303344384": "7:7",
+    "1770303345084": "8:8",
+    "1770303345152": "9:9",
+    "1770303345169": "9:9",
+    "1770303345223": "9:9",
+    "1770303345333": "10:10",
+    "1770303345392": "10:10",
+    "1770303345448": "11:11",
+    "1770303345534": "11:11",
+    "1770303345660": "12:12",
+    "1770303345749": "12:12",
+    "1770303346183": "13:13",
+    "1770303346256": "13:13",
+    "1770303346274": "14:14",
+    "1770303346337": "15:15",
+    "1770303346368": "15:15",
+    "1770303346400": "15:15",
+    "1770303346422": "16:16",
+    "1770303346497": "17:17",
+    "1770303346506": "17:17",
+    "1770303346639": "18:18",
+    "1770303346640": "19:19",
+    "1770303346653": "19:19",
+    "1770303346682": "19:19",
+    "1770303347206": "18:18",
+    "1770303347284": "18:18",
+    "1770303347358": "17:17",
+    "1770303347448": "17:17",
+    "1770303347868": "18:18",
+    "1770303347985": "18:18",
+    "1770303348398": "19:19",
+    "1770303348494": "19:19",
+    "1770303348608": "20:20",
+    "1770303348688": "21:21",
+    "1770303348701": "21:21",
+    "1770303348771": "21:21",
+    "1770303348807": "22:22",
+    "1770303348884": "22:22",
+    "1770303349102": "21:21",
+    "1770303349154": "21:21",
+    "1770303349228": "20:20",
+    "1770303349292": "20:20",
+    "1770303349371": "19:19",
+    "1770303349431": "19:19",
+    "1770303349516": "18:18",
+    "1770303349574": "18:18",
+    "1770303349805": "19:19",
+    "1770303349851": "19:19",
+    "1770303350073": "20:20",
+    "1770303350139": "20:20",
+    "1770303350862": "21:21",
+    "1770303350943": "21:21",
+    "1770303351040": "22:22",
+    "1770303351078": "23:23",
+    "1770303351104": "23:23",
+    "1770303351198": "23:23",
+    "1770303351308": "24:24",
+    "1770303351363": "24:24",
+    "1770303351407": "25:25",
+    "1770303351503": "25:25",
+    "1770303351539": "26:26",
+    "1770303351652": "26:26",
+    "1770303351806": "27:27",
+    "1770303351869": "28:28",
+    "1770303351951": "28:28",
+    "1770303352006": "28:28",
+    "1770303352394": "29:29",
+    "1770303352488": "29:29",
+    "1770303352828": "30:30",
+    "1770303352868": "31:31",
+    "1770303352927": "31:31",
+    "1770303352989": "31:31",
+    "1770303353015": "32:32",
+    "1770303353109": "32:32",
+    "1770303353517": "33:33",
+    "1770303353609": "33:33",
+    "1770303353690": "34:34",
+    "1770303353767": "35:35",
+    "1770303353778": "35:35",
+    "1770303353837": "35:35",
+    "1770303353848": "36:36",
+    "1770303353960": "36:36",
+    "1770303354054": "37:37",
+    "1770303354163": "38:38",
+    "1770303354176": "38:38",
+    "1770303354237": "38:38",
+    "1770303354333": "39:39",
+    "1770303354356": "40:40",
+    "1770303354427": "40:40",
+    "1770303354437": "40:40",
+    "1770303354961": "39:39",
+    "1770303355018": "39:39",
+    "1770303355087": "38:38",
+    "1770303355155": "38:38",
+    "1770303355336": "39:39",
+    "1770303355366": "40:40",
+    "1770303355393": "40:40",
+    "1770303355423": "40:40",
+    "1770303357285": "41:41",
+    "1770303357358": "41:41",
+    "1770303357409": "41:41"
+  },
+  "key_records": {
+    "1770303342515": "keydown: b",
+    "1770303342592": "keyup: b",
+    "1770303342629": "keydown: e",
+    "1770303342712": "keyup: e",
+    "1770303342835": "keydown: t",
+    "1770303342928": "keydown: h",
+    "1770303342947": "keyup: t",
+    "1770303343019": "keyup: h",
+    "1770303343921": "keydown: 0",
+    "1770303343985": "keyup: 0",
+    "1770303344033": "keydown: 0",
+    "1770303344130": "keyup: 0",
+    "1770303344293": "keydown: Enter",
+    "1770303344384": "keyup: Enter",
+    "1770303345083": "keydown: h",
+    "1770303345150": "keydown: e",
+    "1770303345169": "keyup: h",
+    "1770303345223": "keyup: e",
+    "1770303345329": "keydown: l",
+    "1770303345392": "keyup: l",
+    "1770303345446": "keydown: l",
+    "1770303345534": "keyup: l",
+    "1770303345657": "keydown: o",
+    "1770303345749": "keyup: o",
+    "1770303346181": "keydown:  ",
+    "1770303346256": "keyup:  ",
+    "1770303346274": "keydown: t",
+    "1770303346335": "keydown: h",
+    "1770303346368": "keyup: t",
+    "1770303346400": "keyup: h",
+    "1770303346420": "keydown: e",
+    "1770303346495": "keydown: r",
+    "1770303346506": "keyup: e",
+    "1770303346639": "keydown: t",
+    "1770303346640": "keydown: e",
+    "1770303346653": "keyup: r",
+    "1770303346682": "keyup: e",
+    "1770303347205": "keydown: Backspace",
+    "1770303347284": "keyup: Backspace",
+    "1770303347356": "keydown: Backspace",
+    "1770303347448": "keyup: Backspace",
+    "1770303347866": "keydown: e",
+    "1770303347985": "keyup: e",
+    "1770303348396": "keydown:  ",
+    "1770303348494": "keyup:  ",
+    "1770303348605": "keydown: w",
+    "1770303348686": "keydown: h",
+    "1770303348701": "keyup: w",
+    "1770303348771": "keyup: h",
+    "1770303348806": "keydown: w",
+    "1770303348884": "keyup: w",
+    "1770303349100": "keydown: Backspace",
+    "1770303349154": "keyup: Backspace",
+    "1770303349226": "keydown: Backspace",
+    "1770303349292": "keyup: Backspace",
+    "1770303349370": "keydown: Backspace",
+    "1770303349431": "keyup: Backspace",
+    "1770303349513": "keydown: Backspace",
+    "1770303349574": "keyup: Backspace",
+    "1770303349758": "keydown: Shift",
+    "1770303349804": "keydown: !",
+    "1770303349851": "keyup: Shift",
+    "1770303350072": "keydown: Enter",
+    "1770303350139": "keyup: Enter",
+    "1770303350860": "keydown: w",
+    "1770303350943": "keyup: w",
+    "1770303351039": "keydown: h",
+    "1770303351077": "keydown: a",
+    "1770303351104": "keyup: h",
+    "1770303351198": "keyup: a",
+    "1770303351307": "keydown: t",
+    "1770303351363": "keyup: t",
+    "1770303351406": "keydown:  ",
+    "1770303351503": "keyup:  ",
+    "1770303351538": "keydown: a",
+    "1770303351652": "keyup: a",
+    "1770303351804": "keydown: r",
+    "1770303351868": "keydown: e",
+    "1770303351951": "keyup: r",
+    "1770303352006": "keyup: e",
+    "1770303352392": "keydown:  ",
+    "1770303352488": "keyup:  ",
+    "1770303352825": "keydown: y",
+    "1770303352866": "keydown: o",
+    "1770303352927": "keyup: y",
+    "1770303352989": "keyup: o",
+    "1770303353014": "keydown: u",
+    "1770303353109": "keyup: u",
+    "1770303353515": "keydown:  ",
+    "1770303353609": "keyup:  ",
+    "1770303353688": "keydown: f",
+    "1770303353764": "keydown: o",
+    "1770303353778": "keyup: f",
+    "1770303353837": "keyup: o",
+    "1770303353846": "keydown: r",
+    "1770303353960": "keyup: r",
+    "1770303354052": "keydown:  ",
+    "1770303354162": "keydown: o",
+    "1770303354176": "keyup:  ",
+    "1770303354237": "keyup: o",
+    "1770303354331": "keydown: e",
+    "1770303354355": "keydown: n",
+    "1770303354427": "keyup: e",
+    "1770303354437": "keyup: n",
+    "1770303354959": "keydown: Backspace",
+    "1770303355018": "keyup: Backspace",
+    "1770303355085": "keydown: Backspace",
+    "1770303355155": "keyup: Backspace",
+    "1770303355335": "keydown: n",
+    "1770303355363": "keydown: e",
+    "1770303355393": "keyup: n",
+    "1770303355423": "keyup: e",
+    "1770303357208": "keydown: Shift",
+    "1770303357283": "keydown: ?",
+    "1770303357358": "keyup: ?",
+    "1770303357409": "keyup: Shift"
+  },
+  "scroll_records": {}
+}

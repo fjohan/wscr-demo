@@ -1,0 +1,127 @@
+In the following json you will see a number of measures and their definitions. Implement calculation of each measure using the definition. Some definitions contain suggestions, which you might consider. Some definitions start with the word UNDECIDED. Don't implement those, just return UNDECIDED. Some definition requires definition of word, sentence and revision. Devise a working definition for each and use that. Produce a json with each measure but print a simpe text version to the Info window
+
+{
+  "Table 1": [
+    {
+      "Measure": "Number of words",
+      "Definition": "A word is defined as a string of letters separated by spaces (or punctuation). Please improve as you see fit."
+    },
+    {
+      "Measure": "Word length",
+      "Definition": "Word length is defined as the average number of characters per word."
+    },
+    {
+      "Measure": "Number of sentences",
+      "Definition": "A sentence is defined as a span of text ending in a terminal punctuation mark. Please improve as you see fit."
+    },
+    {
+      "Measure": "Proportion of spelling errors",
+      "Definition": "UNDECIDED - Spelling errors in the final texts were identified and coded manually by one of the authors, and then extracted/calculated manually. To compare the proportion of spelling errors among participants, the number of spelling errors in the final texts were divided by the number of words in the final text"
+    },
+    {
+      "Measure": "Lexical diversity",
+      "Definition": "UNDECIDED - Measures of lexical diversity indicate the lexical variation in a text, i.e., the more unique words that are used, the higher the lexical diversity. In this study we used the measure “VocD” (Malvern et al., 2004), which is incorporated in the CLAN programs (MacWhinney, 2000). This measure is automatically calculated by CLAN."
+    },
+    {
+      "Measure": "Lexical density",
+      "Definition": "UNDECIDED - Measures of lexical density indicate what proportion of the text consists of lexical words (nouns, verbs, adjectives, and lexical adverbs). We used a measure of lexical density where the number of lexical words was divided by the total number of words (Halliday, 1985; Johansson, 2009). The distribution of lexical and function words was manually recoded by me, and CLAN was then used to calculate the number of function words and lexical words."
+    },
+    {
+      "Measure": "Number of T-units",
+      "Definition": "UNDECIDED - Number of T-units per text. Each text was segmented into T-units as the shortest grammatically allowable sentences: a T-unit is defined as a main clause and its subordinated clause(s) or non-clausal structures that are embedded or attached to it."
+    },
+    {
+      "Measure": "Number of clauses",
+      "Definition": "UNDECIDED - The number of clauses per text encompasses both main clauses and subordinate clauses. These clauses were first manually coded and subsequently automatically extracted using CLAN."
+    },
+    {
+      "Measure": "Words per T-unit",
+      "Definition": "UNDECIDED - The measure of words per T-unit (Hunt, 1966) refers to the average number of words within each T-unit. T-units are manually coded and then the count of words per T-unit was automatically calculated using CLAN."
+    },
+    {
+      "Measure": "Clause per T-units",
+      "Definition": "UNDECIDED - The measure of clauses per T-unit (Hunt, 1966) refers to the average number of clauses within each T-unit. T-units and clauses were first manually coded and then the count of clauses per T-unit was automatically calculated using CLAN."
+    },
+    {
+      "Measure": "Words per clause",
+      "Definition": "UNDECIDED - The measure of words per clause (Hunt, 1966) refers to the average number of words within each clause. Clauses were manually coded, and then the count of words per clause was automatically calculated using CLAN."
+    },
+    {
+      "Measure": "Writing time",
+      "Definition": "Writing time was defined as total time on task in minutes, seconds, and milliseconds."
+    },
+    {
+      "Measure": "Number of characters linear text",
+      "Definition": "The number of characters was determined by calculating the total count of characters produced during the whole writing process including these that were later deleted."
+    },
+    {
+      "Measure": "Writing flow (offline)",
+      "Definition": "Offline writing flow refers to the ratio of the amount of text (measured in the number of characters) in the final text to the writing time in seconds. The number of characters, including letters, numbers, punctuation, and spaces."
+    },
+    {
+      "Measure": "Writing flow (online)",
+      "Definition": "Online writing flow is determined by the amount of text (measured in the number of characters) in the linear text divided by the total writing time in seconds. The number of characters, including letters, numbers, punctuation, and spaces."
+    },
+    {
+      "Measure": "Transition time",
+      "Definition": "The transition time between letters within a word has frequently been used as an indicator of a writer’s typing proficiency or transcription skills (Wengelin, 2006). Use the median transition time (measured in seconds) between two consecutive keystrokes within a word was used"
+    },
+    {
+      "Measure": "Pause percentage",
+      "Definition": "Pauses are defined as periods of inactivity during typing. Two pause criteria were used to capture different processes in this thesis. Inactivity for 1 second or longer was used to examine low-level processes, such as transcription skills and spelling, while inactivity lasting 4 seconds or longer was used to explore higher-level processes connected to planning and revision. Pauses and pause time are automatically extracted, and the pause percentage, or the proportion of pause time to the total writing time, was obtained manually by dividing the pause time by the total writing time."
+    },
+    {
+      "Measure": "Pauses before words",
+      "Definition": "This measure indicates the frequency of pauses occurring before a word."
+    },
+    {
+      "Measure": "Pauses within words",
+      "Definition": "This measure indicates the frequency of pauses occurring within a word, specifically between the letters within a word."
+    },
+    {
+      "Measure": "Pauses after words",
+      "Definition": "This measure indicates the frequency of pauses occurring after a word."
+    },
+    {
+      "Measure": "Pauses between words",
+      "Definition": "This measure indicates the frequency of pauses occurring between words."
+    },
+    {
+      "Measure": "Pauses between sentences",
+      "Definition": "This measure indicates the frequency of pauses occurring between sentences."
+    },
+    {
+      "Measure": "P-bursts in characters (mean)",
+      "Definition": "A P-burst, also referred to as a 'pause burst,' defines a sequence of typed characters between pauses of a specific duration, serving as a measure to assess writing fluency. This measure quantifies the number of characters produced before the next pause (meeting the defined length) took place, providing insights into the length of each burst. The selection of pause criteria influences the number of characters in each burst."
+    },
+    {
+      "Measure": "P-bursts in seconds (mean)",
+      "Definition": "A P-burst can also be counted in seconds, representing a time of fluent writing before it is interrupted by a pause of a specific length. This measure quantifies the amount of continuous writing time before the next pause occurs."
+    },
+    {
+      "Measure": "R-bursts in seconds",
+      "Definition": "An R-burst in seconds is defined as the duration of text production, in seconds, that takes place between revisions."
+    },
+    {
+      "Measure": "R-bursts in characters",
+      "Definition": "An R-burst, also known as a \"revision burst,\" refers to a continuous sequence of typed characters produced between revisions, such as when the backspace or delete keys are pressed. This measure is used to represent fluency."
+    },
+    {
+      "Measure": "Removed characters",
+      "Definition": "The total number of removed characters is divided by the total number of produced characters."
+    },
+    {
+      "Measure": "Inserted characters",
+      "Definition": "The total number of inserted characters are divided by the total number of produced characters (in the linear text)."
+    },
+    {
+      "Measure": "Bigger revisions",
+      "Definition": "UNDECIDED - The categorization of revisions into smaller and bigger revisions is defined ad hoc, where revisions shorter than five characters are considered smaller revisions, and revisions longer than five characters are considered bigger revisions. This categorization may require later manual coding."
+    },
+    {
+      "Measure": "Global revisions",
+      "Definition": "UNDECIDED - Revision location is ad hoc divided into two categories. Local revisions occur at the inscription point. Global revisions are those made further away from the inscription point, that is when the writer had used the mouse or arrow keys to move away from the inscription point to revise something."
+    }
+  ]
+}
+

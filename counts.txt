@@ -1,0 +1,194 @@
+In the following json you will see a number of measures and their definitions. Implement calculation of each measure using the definition. Some definition requires definition of words:w, sentences and paragraphs. Devise a working definition for each and use that. Produce a json with each measure but print a simpe text version to the Info window
+
+{
+  "analysis": "Summary",
+  "items": [
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Total",
+      "definition": "Total number of characters produced (both typed and copied) in the writing"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Total copied",
+      "definition": "Total number of characters copied"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Total typed (incl. spaces)",
+      "definition": "Total number of characters typed including spaces"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Per minute (incl. spaces)",
+      "definition": "Total number of characters typed including spaces divided by the length of the writing process in minutes"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Total typed  (excl. spaces)",
+      "definition": "Total number of characters typed excluding spaces"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Per minute  (excl. spaces)",
+      "definition": "Total number of characters typed excluding spaces divided by the length of the writing process in minutes"
+    },
+    {
+      "section": null,
+      "subsection": "Words",
+      "variable": "Total",
+      "definition": "Total number of words produced during the writing process"
+    },
+    {
+      "section": null,
+      "subsection": "Words",
+      "variable": "Per minute",
+      "definition": "Total number of words produced during the writing process divided by the length of the writing process in minutes"
+    },
+    {
+      "section": null,
+      "subsection": "Words",
+      "variable": "Mean Word Length",
+      "definition": "Mean length of the words produced"
+    },
+    {
+      "section": null,
+      "subsection": "Words",
+      "variable": "St. Dev. Word length",
+      "definition": "Standard deviation of the length of the words produced"
+    },
+    {
+      "section": null,
+      "subsection": "Sentences",
+      "variable": "Total",
+      "definition": "Total number of sentences produced during the writing process "
+    },
+    {
+      "section": null,
+      "subsection": "Sentences",
+      "variable": "Mean Characters/sentence",
+      "definition": "Total number of characters produced during the writing process divided by the number of sentences"
+    },
+    {
+      "section": null,
+      "subsection": "Sentences",
+      "variable": "St. Dev. Characters/sentence",
+      "definition": "Standard deviation of the number of characters produced per sentence"
+    },
+    {
+      "section": null,
+      "subsection": "Characters/sentence",
+      "variable": "Mean Words/sentence",
+      "definition": "Total number of words produced during the writing process divided by the number of sentences"
+    },
+    {
+      "section": null,
+      "subsection": "Characters/sentence",
+      "variable": "St. Dev. Words/sentence",
+      "definition": "Standard deviation of the number of words produced per sentence"
+    },
+    {
+      "section": null,
+      "subsection": "Paragraphs",
+      "variable": "Total",
+      "definition": "Total number of paragraphs produced during the writing process"
+    },
+    {
+      "section": null,
+      "subsection": "Paragraphs",
+      "variable": "Mean Characters/paragraphs",
+      "definition": "Total number of characters produced during the writing process divided by the number of paragraphs"
+    },
+    {
+      "section": null,
+      "subsection": "h",
+      "variable": "St. Dev. Characters/paragraphs",
+      "definition": "Standard deviation of the number of characters produced per paragraph"
+    },
+    {
+      "section": null,
+      "subsection": "paragraphs",
+      "variable": "Mean Words/paragraphs",
+      "definition": "Total number of words produced during the writing process divided by the number of paragraphs"
+    },
+    {
+      "section": null,
+      "subsection": "paragraphs",
+      "variable": "St. Dev. Words/paragraphs",
+      "definition": "Standard deviation of the number of words produced per paragraph"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Total (incl. spaces)",
+      "definition": "Total number of characters (including spaces) in the final text"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Per minute (incl. spaces)",
+      "definition": "Total number of characters (including spaces) in the final text divided by the length of the writing process in minutes"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Total (excl. spaces)",
+      "definition": "Total number of characters (excluding spaces) in the final text"
+    },
+    {
+      "section": null,
+      "subsection": "Characters",
+      "variable": "Per minute (excl. spaces)",
+      "definition": "Total number of characters (excluding spaces) in the final text divided by the length of the writing process in minutes"
+    },
+    {
+      "section": null,
+      "subsection": "Words",
+      "variable": "Total",
+      "definition": "Total number of words in the final text"
+    },
+    {
+      "section": null,
+      "subsection": "Words",
+      "variable": "Per minute",
+      "definition": "Total number of words in the final text divided by the length of the writing process in minutes"
+    },
+    {
+      "section": null,
+      "subsection": "Paragraphs",
+      "variable": "Total",
+      "definition": "Total number of paragraphs in the final text"
+    },
+    {
+      "section": null,
+      "subsection": "Ratio",
+      "variable": "Produced ratio (incl. spaces)",
+      "definition": "Sum of total number of characters in the final text (incl. spaces) and the total number of non-character keys, divided by the total number of characters produced during the writing process"
+    },
+    {
+      "section": null,
+      "subsection": "Proportion",
+      "variable": "Characters (incl. spaces) ",
+      "definition": "Total number of characters in the final text (including spaces) divided by the total number of characters typed during the writing process."
+    },
+    {
+      "section": null,
+      "subsection": "Proportion",
+      "variable": "Characters (excl. spaces)",
+      "definition": "Total number of characters in the final text (excluding spaces) divided by the total number of characters typed during the writing process"
+    },
+    {
+      "section": null,
+      "subsection": "Proportion",
+      "variable": "Words",
+      "definition": "Total number of words in the final text divided by the total number of words during the writing process"
+    }
+  ]
+}
+

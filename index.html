@@ -1,0 +1,258 @@
+<!--?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+<title>ScriptLog.js</title>
+<script type="text/javascript" src="fetchToZip.js"></script>
+<script type="text/javascript" src="fetchFinalTextsToZip.js"></script>
+<script type="text/javascript" src="i18n.js"></script>
+<script type="text/javascript" src="linear.js"></script>
+<script type="text/javascript" src="linear-key.js"></script>
+<script type="text/javascript" src="measures.js"></script>
+<script type="text/javascript" src="simple-inspect.js"></script>
+<script type="text/javascript" src="count.js"></script>
+<script type="text/javascript" src="inspect.js"></script>
+<script type="text/javascript" src="webscriptlog_main.js"></script>
+<script type="text/javascript" src="ui.js"></script>
+<!--script type="text/javascript" src="viz.js"></script-->
+<script type="text/javascript" src="helpers_js/idbStore.js"></script>
+<script type="text/javascript" src="ext_js/diff_match_patch.js"></script>
+<script type="text/javascript" src="ext_js/FileSaver.js"></script>
+<!--script type="text/javascript" src="ext_js/d3.min.js"></script-->
+<script type="text/javascript" src="ext_js/d3.v7.min.js"></script>
+<script type="text/javascript" src="ext_js/jszip.min.js"></script>
+<script type="text/javascript" src="ext_js/pako.min.js"></script>
+<script type="text/javascript" src="ext_js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body onload="init()">
+
+  <!-- Optional language picker -->
+
+  <div id="tabs"></div>
+
+  <!-- RECORD -->
+  <template id="panel-RECORD">
+
+		<div class="pane-split">
+			<div class="pane-main" id="recorderFrame">
+				<textarea
+						data-i18n-attr="placeholder:ph.recorder"
+						style="vertical-align: text-top;"
+						id="recorder"
+						rows="10"
+						cols="80"></textarea>
+			</div>
+
+			<div class="pane-side" id="recorderButtons">
+				<span class="sidLabel"></span>
+				<p>
+				<b data-i18n="label.code"></b>
+				<span data-i18n="label.codeHelp"></span>
+				</p>
+
+				<input
+						style="width: 80px; font-family: monospace; font-size: 18px;"
+						type="text"
+						id="userCode"
+						maxlength="6"
+						autocomplete="false"
+						autocorrect="false"
+						spellcheck="false"
+						oninput="checkUserCode(this)"
+						autofocus
+						/>
+
+				<div data-role="btnbar"></div>
+
+				<br />
+				<span id="messageLabel"></span>
+			</div>
+		</div>
+	</template>
+
+  <!-- REPLAY -->
+  <template id="panel-REPLAY">
+    <div id="replayButtons" class="replay-top-controls">
+      <div class="replay-top-row">
+        <div class="replay-controls-inline">
+          <div data-role="btnbar"></div>
+        </div>
+        <div class="replay-list-inline">
+          <select style="vertical-align: text-top;" id="lb_load" name="lb" size="2"></select>
+        </div>
+        <div id="replayAuxButtons" class="replay-aux-inline"></div>
+      </div>
+      <div style="display:none;" id="div_fetch">
+        <span data-i18n="label.start"></span>
+        <input type="number" id="startlimit" value="0" min="0" max="1000" />
+        <br />
+        <span data-i18n="label.end"></span>
+        <input type="number" id="endlimit" value="5" min="0" max="1000" />
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="replay-main-row">
+      <div class="replay-main-pane" id="replayFrame">
+        <div class="replay-pane-header-row">
+          <h3 data-i18n="heading.replayWindow"></h3>
+        </div>
+        <textarea style="vertical-align: text-top;" id="playback" rows="10" cols="80"></textarea>
+      </div>
+      <div class="replay-graph-pane">
+        <div class="replay-pane-header-row">
+          <h3 data-i18n="heading.progressGraph"></h3>
+          <div class="graph-inline-controls">
+            <div class="speed-row">
+              <label for="replaySpeed" data-i18n="label.replaySpeed"></label>
+              <select id="replaySpeed">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="2">2x</option>
+                <option value="4">4x</option>
+                <option value="10">10x</option>
+              </select>
+            </div>
+            <div class="graph-threshold-row">
+              <label for="processPauseThreshold" data-i18n="label.processPauseThreshold"></label>
+              <input id="processPauseThreshold" type="number" min="0" step="0.05" value="0.30" />
+            </div>
+          </div>
+        </div>
+        <div class="process-graph-wrap">
+          <div class="timeline-caption">
+            <span data-i18n="label.timeline"></span>
+            <span id="replayTimeLabel">0.000s / 0.000s</span>
+          </div>
+          <div class="timeline-row">
+            <input type="range" id="replaySeek" min="0" max="1000" value="0" step="1" />
+          </div>
+          <svg id="processGraphSvg" width="730" height="430"></svg>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="lin-header-row">
+      <h3 data-i18n="heading.linData"></h3>
+      <div class="lin-controls">
+        <label for="linPauseThreshold" data-i18n="label.linPauseThreshold"></label>
+        <input id="linPauseThreshold" type="number" min="0" step="0.05" value="0.30" />
+      </div>
+    </div>
+    <p><span id="linoutputKey">...</span></p>
+    <div style="display:none;">
+      <span id="linoutput"></span>
+      <span id="linstatus" class="linstatus"></span>
+      <button id="linExportDiffsBtn" type="button" class="sl_button" data-i18n="btn.EXPORT_DIFFS"></button>
+      <div id="lincompare" class="lincompare"></div>
+      <details id="lindebugWrap" class="lindebug-wrap">
+        <summary>LIN debug</summary>
+        <pre id="lindebug" class="lindebug"></pre>
+      </details>
+    </div>
+
+    <h3 data-i18n="heading.revisionTable"></h3>
+    <p>
+      <span id="revisionoutput">...</span>
+      <table id="sentenceDiffTable">
+        <thead>
+          <tr>
+            <th data-i18n="th.rowNumber"></th>
+            <th data-i18n="th.localDiff"></th>
+            <th data-i18n="th.classification"></th>
+            <th data-i18n="th.location"></th>
+            <th data-i18n="th.newGroup"></th>
+            <th data-i18n="th.groupDiff"></th>
+            <th data-i18n="th.timeSeconds"></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </p>
+
+    <div class="replay-under-textarea">
+      <span class="sidLabel"></span>
+      <div class="replay-file-row">
+        <span data-i18n="label.selectFile"></span>
+        <input style="margin: 10px;" type="file" accept="text/plain" onchange="openFile(event)" />
+      </div>
+      <button id="processPauseExportBtn" type="button" class="sl_button" data-i18n="btn.EXPORT_PAUSES"></button>
+    </div>
+  </template>
+
+  <!-- ANALYZE -->
+  <template id="panel-ANALYZE">
+    <h3 data-i18n="heading.infoWindow"></h3>
+    <p>
+      <textarea style="vertical-align: text-top;" id="messages" rows="10" cols="80"></textarea>
+      <span style="vertical-align: text-top; display:inline-block;">
+        <div data-role="btnbar"></div>
+        <div class="inspect-controls">
+          <label for="inspectMode" data-i18n="label.inspectMode"></label>
+          <select id="inspectMode">
+            <option value="counts" data-i18n="opt.inspectCounts"></option>
+            <option value="measures" data-i18n="opt.inspectMeasures"></option>
+            <option value="simple" data-i18n="opt.inspectSimple"></option>
+          </select>
+        </div>
+        Pause criteria
+		    <input type="number" id="pauseCrit" value="0.300" min="0" max="3" step="0.1">
+      </span>
+    </p>
+
+    <!--div id="diffviz"></div-->
+
+    <h3 data-i18n="heading.ftAnalysis"></h3>
+    <p><div id="ftAnalysis">
+      <div id="label">Time: -</div>
+      <div id="content"></div>
+      <button id="generate-table">Generate Table</button>
+      <div id="table-container"></div>
+    </div></p>
+  </template>
+
+  <template id="panel-SETTINGS">
+    <h3 data-i18n="heading.settings"></h3>
+
+    <p>
+    <label for="lang" style="margin-right:8px;" data-i18n="ui.language"></label>
+    <select id="lang">
+      <option value="sv">Svenska</option>
+      <option value="en">English</option>
+    </select>
+    </p>
+
+    <!-- keep a btnbar marker for consistency, even if empty -->
+    <div data-role="btnbar"></div>
+  </template>
+
+
+  <script>
+
+
+
+  </script>
+</body>
+
+
+
+
+
+
+</html>
