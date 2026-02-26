@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScriptLog Web Demo</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --ink: #122033;
+      --muted: #5c6b7a;
+      --line: #d6deea;
+      --accent: #1663c7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 20% 0%, #e8f0ff 0%, transparent 45%),
+        radial-gradient(circle at 80% 0%, #eef8ff 0%, transparent 40%),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      margin: 0 0 24px;
+      color: var(--muted);
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: minmax(280px, 1.15fr) minmax(250px, 1fr);
+      gap: 20px;
+      box-shadow: 0 12px 30px rgba(15, 38, 67, 0.08);
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #edf2f8;
+    }
+
+    .hero-side h2 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+
+    .hero-side p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    .hero-side ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .caption {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin: 8px 4px 24px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+
+    section h3 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+    }
+
+    .cta {
+      margin-top: 24px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(90deg, #1157b6, #2b7be6);
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 1px solid #0f4d9f;
+    }
+
+    .cta:hover { filter: brightness(1.05); }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>ScriptLog Web Demo</h1>
+      <p>A browser-based keystroke logging environment for studying writing processes.</p>
+    </header>
+
+    <div class="hero">
+      <div>
+        <img src="markup_1000005286.jpg" alt="Screenshot-style overview of the ScriptLog web interface">
+      </div>
+      <div class="hero-side">
+        <h2>Thesis using Humanities Lab tools, just defended!</h2>
+        <p>Gullberg, K. (2026). Language Production and Deception: Explorative experimental studies on deception as a constraint during spoken and written narratives. [Doktorsavhandling (sammanläggning), Språk- och litteraturcentrum]. Lund University.</p>
+        <p>Deception (lying) in writing, example findings:</p>
+        <ul>
+          <li>more pauses...</li>
+          <li>more revisions...</li>
+          <li>How can we see/measure this in writing?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="caption">Sources: Sydsvenskan, SVT</div>
+
+    <a class="cta" href="./index.html">Open the ScriptLog app (index.html)</a>
+    <hr>
+    <section>
+      <h3>1. What kind of technology is it?</h3>
+      <p>ScriptLog Web is a browser-based keystroke logging and replay system. It records detailed writing events such as typing, deletions, cursor movement, pauses, and revisions, and supports process-level playback and analysis.</p>
+    </section>
+
+    <section>
+      <h3>2. What can it be used for?</h3>
+      <p>It can be used for writing-process research, educational writing studies, revision behavior analysis, and comparisons across writers, tasks, or proficiency levels.</p>
+    </section>
+
+    <section>
+      <h3>3. What types of questions can it answer?</h3>
+      <p>It can answer questions about when and where revision happens, how pause behavior evolves, whether writing is linear or recursive, and how process patterns differ between participants or conditions.</p>
+    </section>
+
+  </div>
+</body>
+</html>
